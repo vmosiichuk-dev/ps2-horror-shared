@@ -16,7 +16,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src --format esm,cjs --dts"
+    "build": "tsup src --format esm,cjs --dts",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "tsup": "^8.5.0",

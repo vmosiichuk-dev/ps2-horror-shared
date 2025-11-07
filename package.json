@@ -1,0 +1,25 @@
+{
+  "name": "ps2-horror-shared",
+  "version": "1.0.0",
+  "author": "vmosiichuk-dev",
+  "license": "ISC",
+  "type": "module",
+  "files": ["dist"],
+  "exports": {
+    "./types": {
+      "import": "./dist/types.js",
+      "require": "./dist/types.cjs"
+    },
+    "./utils": {
+      "import": "./dist/utils.js",
+      "require": "./dist/utils.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup src --format esm,cjs --dts"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}
